@@ -1,14 +1,14 @@
 FROM alpine:3.7 AS builder
 
 ENV \
-  SHA256_LIBTORRENT=2838a08c96edfd936aff8fbf99ecbb930c2bfca3337dd1482eb5fccdb80d5a04 \
-  SHA256_RTORRENT=1e69c24f1f26f8f07d58d673480dc392bfc4317818c1115265b08a7813ff5b0e \
-  URL_LIBTORRENT=http://rtorrent.net/downloads/libtorrent-0.13.6.tar.gz \
-  URL_RTORRENT=http://rtorrent.net/downloads/rtorrent-0.9.6.tar.gz \
-  TAR_LIBTORRENT=libtorrent-0.13.6.tar.gz \
-  TAR_RTORRENT=rtorrent-0.9.6.tar.gz \
-  DIR_LIBTORRENT=libtorrent-0.13.6 \
-  DIR_RTORRENT=rtorrent-0.9.6
+  SHA256_LIBTORRENT=704e097119dc89e2ee4630396b25de1cd64b0549841347ea75b9ef9217084955 \
+  SHA256_RTORRENT=bc0a2c1ee613b68f37021beaf4e64a9252f91ed06f998c1e897897c354ce7e84 \
+  URL_LIBTORRENT=http://rtorrent.net/downloads/libtorrent-0.13.4.tar.gz \
+  URL_RTORRENT=http://rtorrent.net/downloads/rtorrent-0.9.4.tar.gz \
+  TAR_LIBTORRENT=libtorrent-0.13.4.tar.gz \
+  TAR_RTORRENT=rtorrent-0.9.4.tar.gz \
+  DIR_LIBTORRENT=libtorrent-0.13.4 \
+  DIR_RTORRENT=rtorrent-0.9.4
 
 RUN apk add --update --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.6/main \
     g++ \
